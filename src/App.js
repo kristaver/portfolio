@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={photo} className="App-logo" alt="logo" />
         <h1>
-          this is my portfolio ~ to be ~ test
+          this is ~soon~ my portfolio
         </h1>
         <p>
           the page is under construction
