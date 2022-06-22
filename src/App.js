@@ -1,11 +1,12 @@
 import photo from './pfp.png';
+import github from './github64.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={photo} className="App-logo" alt="logo" />
+        <img src={photo} className="App-logo" alt="the developer, a 24 year old, smiling" />
         <h1>
           this is ~soon~ my portfolio
         </h1>
@@ -18,7 +19,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          github
+        <img src={github} className="github-logo" alt="github logo" />
         </a>
       </header>
     </div>
