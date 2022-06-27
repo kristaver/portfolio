@@ -2,13 +2,12 @@ import React from 'react'
 import {ButtonGroup, Button} from '@mui/material'
 import Style from './Menu.module.scss'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { lightBlue } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
     primary: {
       // Purple and green play nicely together.
-      main: lightBlue[500],
+      main: '#ffffff',
     },
     secondary: {
       // This is green.A700 as hex.
@@ -28,7 +27,7 @@ export const Menu = ({setMenu}) => {
         <ButtonGroup size="large" color="primary" variant="outlined" aria-label="outlined button group">
           <Button onClick={()=> handleClick("main")}>start page</Button>
           <Button onClick={()=> handleClick("about")}>about me</Button>
-          {/* <Button>projects</Button> */}
+          <Button onClick={()=> handleClick("projects")}>projects</Button>
         </ButtonGroup>
       </div>
     </ThemeProvider>
