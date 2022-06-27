@@ -1,7 +1,7 @@
 {
   "name": "portfolio_spa",
   "version": "0.1.1",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
