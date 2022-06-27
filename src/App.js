@@ -1,27 +1,19 @@
-import photo from './pfp.png';
-import github from './github64.png';
+import {Menu} from './components/Menu';
+import {About} from './components/About';
+import {MainPage} from './components/MainPage';
+import {Footer} from './components/Footer';
 import './App.css';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [menu, setMenu] = useState("main");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={photo} className="App-logo" alt="the developer, a 24 year old, smiling" />
-        <h1>
-          this is ~soon~ my portfolio
-        </h1>
-        <p>
-          the page is under construction
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/Kristaver"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        <img src={github} className="github-logo" alt="github logo" />
-        </a>
-      </header>
+      <Menu setMenu={setMenu} />
+      {menu === "main" && <MainPage setMenu={setMenu} />}
+      {menu === "about" && <About setMenu={setMenu} />}
+      <Footer />
     </div>
   );
 }
