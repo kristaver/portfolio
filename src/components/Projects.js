@@ -3,6 +3,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
+import todo from '../to-do.png';
 
 
 export default function Projects() {
@@ -35,9 +36,9 @@ export default function Projects() {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
-    author: '@bkristastucchio',
+    img: todo,
+    title: 'to-do app',
+    author: 'simple app in vanilla JS',
     rows: 2,
     cols: 2,
     featured: true,

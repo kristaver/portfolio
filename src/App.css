@@ -44,3 +44,11 @@
     transform: rotate(360deg);
   }
 }
+
+.About__skills {
+  list-style: none;
+}
+
+.About__skills--el {
+  font-style: italic;
+}
