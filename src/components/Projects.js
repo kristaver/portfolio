@@ -10,25 +10,27 @@ export default function Projects() {
   return (
     <ImageList sx={{ width: 800, height: 600 }}>
       {itemData.map((item) => (
+        <a href={item.url} target="_blank" rel="noopener noreferrer">
         <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
-          />
+            <img
+              src={`${item.img}?w=248&fit=crop&auto=format`}
+              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              alt={item.title}
+              loading="lazy"
+            />
           <ImageListItemBar
             title={item.title}
             subtitle={item.author}
             actionIcon={
               <IconButton
-                sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                aria-label={`info about ${item.title}`}
+              sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+              aria-label={`info about ${item.title}`}
               >
               </IconButton>
             }
-          />
+            />
         </ImageListItem>
+        </a>
       ))}
     </ImageList>
   );
@@ -42,6 +44,7 @@ const itemData = [
     rows: 2,
     cols: 2,
     featured: true,
+    url: 'http://todo.kristaver.com',
   },
   {
     img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
