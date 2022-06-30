@@ -8,7 +8,7 @@ import todo from '../to-do.png';
 
 export default function Projects() {
   return (
-    <ImageList sx={{ width: 800, height: 600 }}>
+    <ImageList sx={{ width: 700, height: 600 }}>
       {itemData.map((item) => (
         <a href={item.url} target="_blank" rel="noopener noreferrer">
         <ImageListItem key={item.img}>
@@ -40,10 +40,8 @@ const itemData = [
   {
     img: todo,
     title: 'to-do app',
-    author: 'simple app in vanilla JS',
-    rows: 2,
-    cols: 2,
-    featured: true,
+    author: 'a simple todo app in vanilla JS',
+    featured: false,
     url: 'http://todo.kristaver.com',
   },
   {
@@ -60,6 +58,7 @@ const itemData = [
     img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
     title: 'Coffee',
     author: '@nolanissac',
+    featured: true,
     cols: 2,
   },
   {
